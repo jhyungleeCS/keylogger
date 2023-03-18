@@ -1,13 +1,13 @@
 # Disable - Enable Privacy Input Monitoring and Accessibility for Terminal 
 from pynput.keyboard import Key, Listener
 
-print("Logging Key Strokes: ")
+print("Logging Key Strokes: \n Used for Learning Purposes ONLY: ")
 
 def on_press(key):
     try:
-        print('Key {0} pressed.'.format(key.char))
+        print('Key {} pressed.'.format(key.char))
     except AttributeError:
-        print('Key {0} pressed.'.format(key))
+        print('Key {} pressed.'.format(key))
 
 
 def on_release(key):
