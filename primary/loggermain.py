@@ -1,7 +1,7 @@
 from pynput.keyboard import Key, Listener
 
 
-# Keylogger function
+# Keylogger Func
 def keylogger():
     keylog = []
     keylog_class = []
@@ -40,7 +40,6 @@ def keylogger():
     for x in keylog: 
         keylog_class.append(type(x))
 
-    # Print the results
     print("KeyLog: ", keylog)
     print("KeyLog Class Recorded Type with Element Value")
 
