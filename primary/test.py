@@ -1,7 +1,7 @@
 
 
 
-    def savefile(keylog):
+def savefile(keylog):
     file_name = "keylog.txt"
     count = 0
     while os.path.exists(file_name):
