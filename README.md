@@ -1,5 +1,5 @@
 ## About
-##### [Read Full Report Here (My Blog)](https://www.mangoxsecurity.com)
+##### [Read Full Report Here (My Blog)](https://www.jhyungleecs.com)
 
 ### Disclaimer
 
